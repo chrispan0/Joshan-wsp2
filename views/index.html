@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/mdForDesktop.css" />
+  <link rel="stylesheet" href="./css/mdForSmall.css" />
+  <title>My Website (J.B)</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="header container">
+      <div class="navBar">
+        <img src="bitmoji.png">
+        <div class="logo">
+          <h1><span>Mr</span>.<span>JB</span></h1>
+        </div>
+        <nav class="navList">
+          <ul>
+            <li><a href="#home" class="navLink"><span>Home</span></a></li>
+            <li><a href="#about" class="navLink"><span>About</span></a></li>
+            <li><a href="#projects" class="navLink"><span>Projects</span></a></li>
+            <li><a href="#contact" class="navLink"><span>Contact</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Home Section  -->
+  <section id="home">
+    <div class="home container">
+      <div>
+        <h1>Welcome to my Portfolio <span></span></h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="colLeft">
+        <div class="aboutImg">
+          <img src="bitmoji.png">
+        </div>
+      </div>
+      <div class="colRight">
+        <h1 class="sectionTitle">About <span>me</span></h1>
+        <article>
+          <h2>Networking & Information Technology Student</h2>
+          <p>I am currently in my second year of the Networking and Information Technology program. I have a passion for technology. I enjoy exploring various aspects of IT, from network security to data management, and I'm excited to continue learning in this ever-evolving field.</p>
+          <p>Outside of my studies, I love to stay active and enjoy playing sports. Basketball and soccer are my favorite sports, and I find that they help me stay focused and motivated in my academic pursuits. Whether it's shooting hoops with friends or playing in a local soccer league, sports play an essential role in my life.</p>
+        </article>
+        <video controls poster="Get.png">
+          <source src="Movie on 2024-10-05 at 3.18 AM  3.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <h1 class="sectionTitle">Recent <span>Projects</span></h1>
+      <div class="allProjects">
+        <!-- Project Item 1 -->
+        <div class="projectItem">
+          <div class="projectInfo">
+            <h1>CryptoMine</h1>
+            <p>In this project, we developed a strategic routing protocol that enables a company named CryptoMine to communicate effectively with various locations, including Toronto, Los Angeles, Chicago, and New York. By utilizing different protocols such as OSPF and BGP, we ensured that CryptoMine is connected to each of these distinct sites.</p>
+          </div>
+          <div class="projectImg">
+            <img src="Cisco_logo..png">
+          </div>
+        </div>
+        <!-- Project Item 2 -->
+        <div class="projectItem">
+          <div class="projectInfo">
+            <h1>PythonEncryption</h1>
+            <p>My friends and I developed a Python program capable of deciphering various types of encryption codes. Through this project, we gained a solid understanding of how encryption functions and how to effectively break encrypted messages. Working on the program also deepened our knowledge of Python and its capabilities.</p>
+          </div>
+          <div class="projectImg">
+            <img src="python logo.png">
+          </div>
+        </div>
+        <!-- Project Item 3 -->
+        <div class="projectItem">
+          <div class="projectInfo">
+            <h1>Networking Design Project</h1>
+            <p>Local Area Network Design with Static Routing, IPv4 Addressing, VLSM, and Dynamic Routing Protocols. Key concepts include VLSM Subnetting, IP Addressing, Static Routing, and IPv4.</p>
+          </div>
+          <div class="projectImg">
+            <img src="Cisco_logo..png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <h1 class="sectionTitle">Contact <span>info</span></h1>
+      <div class="contactItems">
+        <form action="mailto: joshan.basgar@gmail.com" method="post" class="phpEmailForm">
+          <p>Name</p>
+          <input type="text" name="name" placeholder="Enter your Name here" required />
+          <p>Email</p>
+          <input type="email" name="email" placeholder="Enter your Email Here" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+          <p>Phone Number</p>
+          <input type="tel" name="phone" placeholder="Enter your Cell No. here" required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number." />
+          <p>Subject</p>
+          <input type="text" name="subject" placeholder="Subject" required />
+          <p>Message</p>
+          <textarea style="height: 150px" name="message" placeholder="Enter your Message here" required></textarea>
+          <div class="button">
+            <button class="button" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer container">
+      <div class="logo">
+        <h1><span>Thank You For visiting my webpage</span></h1>
+        <p>You can reach me at ↓</p>
+      </div>
+      <h2>joshan.basgaran@ontariotechu.net</h2>
+      <p>Copyright © 2024 J.B. All rights reserved</p>
+    </div>
+  </footer>
+</body>
+</html>

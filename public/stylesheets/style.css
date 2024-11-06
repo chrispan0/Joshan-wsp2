@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting font styles for entire document */
+html, body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(180deg, darkgrey, white); 
+  color: #343a40;
+  height: 100%;
+}
+
+/* Header section */
+/* Nav bar */
+/* home, about, projects, contact */
+#header {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: auto;
+}
+
+#header .header {
+  min-height: 8vh;
+  background-color: rgba(31, 30, 30, 0.24);
+  transition: 0.3s ease background-color;
+}
+/* keeps nav bar at top and tabs on right side */
+#header .navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-width: 1300px;
+  padding: 0 10px;
+}
+/* Styles header and nav links, ensures stays at top while also being displayed horizontal */
+#header .navList ul {
+  list-style: none;
+  display: flex; /* Change to display flex for horizontal list */
+  margin: 0;
+  padding: 0;
+}
+
+#header .navList ul li {
+  margin: 0 15px; /* Space between list items */
+}
+
+#header .navList ul a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+#header .navList ul a:hover {
+  color: midnightblue; /* Hover color */
+}
+
+/* Home Section */
+/* Welcome to my portfolio */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Logo text */
+/* styles logo in home section */
+.logo h1 {
+  color: white; 
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; 
+  font-size: 4rem; 
+  text-align: center; 
+}
+
+/* Footer */
+/* styling footing section */
+/* Thank upu for visiting my website */
+.footer {
+  margin-top: auto;
+  padding: 20px;
+  background-color: #212529;
+  color: white;
+  text-align: center;
+}
+
+/* Media Queries */
+/* Smartphones 480px */
+@media only screen and (max-width: 480px) {
+  #header .navBar {
+    flex-direction: column;
+  }
+  #header .navList ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  #header .navList ul li {
+    margin: 10px 0;
+  }
+  .logo h1 {
+    font-size: 2.2rem;
+  }
+  .container{
+    padding: 10px;
+  }
+.button{
+  font-size: 0.9rem;
+  padding: 10px 20px;
+}
+.contact-container{
+  width: 80%;
+}
+.projectImg Img{
+  max-width: 100px;
+}
+video{
+  width: 100%;
+}
+
+/* Tablets (between 481px and 960px) */
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  #header .navBar {
+    flex-direction: row; 
+  }
+
+  #header .navList ul {
+    flex-direction: row; 
+  }
+
+  #header .navList ul li {
+    margin: 0 10px; 
+  }
+
+  .logo h1 {
+    font-size: 2.8rem; 
+  }
+
+  .container {
+    padding: 15px; 
+  }
+
+  .button {
+    font-size: 1rem; 
+    padding: 12px 25px; 
+  }
+
+  .projectImg img {
+    max-width: 280px;
+  }
+
+  video {
+    width: 80%;
+  }
+}
+}
+
+/* Contact info */
+/* styling contact info */
+#contact {
+background: linear-gradient(180deg, darkgrey, white); 
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    /*submit button */
+  border-color: #007bff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+/* larger devices */
+@media only screen and (max-width: 960px){
+  .logo h1{
+    font-size: 4rem;
+  }
+  .container{
+    padding: 20px;
+  }
+  .button{
+    font-size: 1.2rem;
+    padding: 15px 30px;
+  }
+  .contact-container {
+    width: 90%;
+  }
+}
+
+/* Projects Section */
+/* displaying projects and imgs and styling */
+/* keeps imgs to the right side */
+.projectItem {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; 
+  justify-content: flex-start;
+  gap: 20px; 
+  width: 100%;
+}
+
+/* project discription */
+.projects .projectInfo p {
+  font-size: 1rem; 
+  line-height: 1.6; 
+  margin-bottom: 20px; 
+  color: #495057; 
+}
+
+/* img sizing */
+.projectImg img {
+  max-width: 190px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* About Section */
+/* creating a title, heading, and description for about section */
+/* keeps it in the center */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: flex-start; 
+  padding: 20px; 
+  max-width: 800px; 
+  margin: 0 auto; 
+  text-align: left; 
+}
+/* sizing of video */
+video {
+  width: 300px; 
+  height: auto; 
+  display: block;
+  margin: 20px left; 
+}
+/* "about me */
+#about .sectionTitle {
+  font-size: 2rem; 
+  margin-bottom: 10px; 
+}
+/* "networking IT student" */
+#about h2 {
+  font-size: 1.3rem; 
+  margin-bottom: 10px; 
+}
+/* description */
+#about p {
+  font-size: 1rem; 
+  line-height: 1.6; 
+  margin-bottom: 20px; 
+  color: #495057; 
+}
+
+/* Button Styles */
+/* submit button */
+.button {
+  background-color: #007bff; 
+  color: white;
+  padding: 15px 30px; 
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.2s; /* Added transition */
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker shade for hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.button:active {
+  transform: translateY(0); /* Button pressed effect */
+}
+
+/* End */
