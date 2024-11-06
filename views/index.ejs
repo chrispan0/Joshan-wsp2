@@ -1,96 +1,89 @@
 <%- include('header') %>
-   <!-- Home Section -->
-   <section id="home" class="home text-center">
-    <div class="container">
-      <h1>Welcome to my Portfolio <span class="text-primary">J.B</span></h1>
-      <p class="lead">Exploring my journey in Networking and Information Technology</p>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about bg-light">
-    <div class="container d-md-flex align-items-center">
-      <div class="aboutImg col-md-4 mb-4 mb-md-0 text-center">
-        <img src="/images/bitmoji.png" alt="Profile Image">
+    <!-- Home Section  -->
+    <section id="home" class="container text-center py-5">
+      <h1>Welcome to my Portfolio <span></span></h1>
+    </section>
+  
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img src="bitmoji.png" class="img-fluid rounded-circle" alt="Profile Image">
+        </div>
+        <div class="col-md-8">
+          <h1>About <span>me</span></h1>
+          <h2>Networking & Information Technology Student</h2>
+          <p>I am currently in my second year of the Networking and Information Technology program. I have a passion for technology...</p>
+          <p>Outside of my studies, I love to stay active and enjoy playing sports...</p>
+          <video controls class="img-fluid mt-3">
+            <source src="Assignment voiceover programming.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
-      <div class="col-md-8">
-        <h2 class="sectionTitle">About <span class="text-primary">Me</span></h2>
-        <h3>Networking & Information Technology Student</h3>
-        <p>I am currently in my second year of the Networking and Information Technology program. I have a passion for technology and enjoy exploring various aspects of IT, from network security to data management.</p>
-        <p>Outside of my studies, I love playing basketball and soccer, which help me stay focused and motivated.</p>
-        <video controls poster="/images/Get.png" class="w-100 mt-3">
-          <source src="/images/Movie on 2024-10-05 at 3.18 AM  3.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2 class="sectionTitle">Recent <span class="text-primary">Projects</span></h2>
+    </section>
+  
+    <!-- Projects Section -->
+    <section id="projects" class="container py-5">
+      <h1 class="text-center mb-4">Recent <span>Projects</span></h1>
       <div class="row">
         <!-- Project Item 1 -->
         <div class="col-md-4 mb-4">
           <div class="card h-100">
-            <img src="/images/Cisco_logo.png" class="card-img-top" alt="CryptoMine Project Image">
+            <img src="Cisco_logo..png" class="card-img-top" alt="Project Image">
             <div class="card-body">
               <h5 class="card-title">CryptoMine</h5>
-              <p class="card-text">A strategic routing protocol connecting various locations like Toronto, Los Angeles, Chicago, and New York using OSPF and BGP.</p>
+              <p class="card-text">In this project, we developed a strategic routing protocol that enables a company named CryptoMine...</p>
             </div>
           </div>
         </div>
         <!-- Project Item 2 -->
         <div class="col-md-4 mb-4">
           <div class="card h-100">
-            <img src="/images/python logo.png" class="card-img-top" alt="PythonEncryption Project Image">
+            <img src="python logo.png" class="card-img-top" alt="Project Image">
             <div class="card-body">
               <h5 class="card-title">PythonEncryption</h5>
-              <p class="card-text">Developed a Python program capable of deciphering various encryption codes, enhancing our understanding of Python and encryption.</p>
+              <p class="card-text">My friends and I developed a Python program capable of deciphering various types of encryption codes...</p>
             </div>
           </div>
         </div>
         <!-- Project Item 3 -->
         <div class="col-md-4 mb-4">
           <div class="card h-100">
-            <img src="/images/Cisco_logo.png" class="card-img-top" alt="Networking Design Project Image">
+            <img src="Cisco_logo..png" class="card-img-top" alt="Project Image">
             <div class="card-body">
               <h5 class="card-title">Networking Design Project</h5>
-              <p class="card-text">Local Area Network Design with Static Routing, IPv4 Addressing, VLSM, and Dynamic Routing Protocols.</p>
+              <p class="card-text">Local Area Network Design with Static Routing, IPv4 Addressing, VLSM, and Dynamic Routing Protocols...</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact bg-light">
-    <div class="container">
-      <h2 class="sectionTitle">Contact <span class="text-primary">Info</span></h2>
-      <form action="mailto:joshan.basgar@gmail.com" method="post" class="phpEmailForm">
+    </section>
+  
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+      <h1 class="text-center mb-4">Contact <span>info</span></h1>
+      <form action="#" method="post" class="mx-auto" style="max-width: 600px;">
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+          <input type="text" class="form-control" name="name" id="name" required>
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+          <input type="email" class="form-control" name="email" id="email" required>
         </div>
         <div class="mb-3">
           <label for="phone" class="form-label">Phone Number</label>
-          <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]{10}">
+          <input type="tel" class="form-control" name="phone" id="phone" required>
         </div>
         <div class="mb-3">
           <label for="subject" class="form-label">Subject</label>
-          <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter subject" required>
+          <input type="text" class="form-control" name="subject" id="subject" required>
         </div>
         <div class="mb-3">
           <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+          <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
         </div>
-        <button type="submit" class="btn btn-custom w-100">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-    </div>
-  </section>
+    </section>
   <%- include('footer') %>
