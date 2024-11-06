@@ -1,33 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/stylesheets/style.css" />
-  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
   <script src="/javascripts/bootstrap.bundle.min.js"></script>
-  <title>My Website (J.B)</title>
+  <title>My Portfolio - J.B</title>
   <style>
     html {
       scroll-behavior: smooth;
+    }
+    .sectionTitle {
+      text-align: center;
+      color: #495057;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .navLink {
+      color: #fff !important;
+    }
+    .header-bg {
+      background-color: #343a40;
+    }
+    .btn-custom {
+      background-color: #007bff;
+      color: #fff;
+    }
+    .btn-custom:hover {
+      background-color: #0056b3;
+    }
+    .footer-bg {
+      background-color: #343a40;
+      color: #ddd;
+    }
+    .projectImg img {
+      max-width: 100%;
+      height: auto;
+    }
+    .home,
+    .about,
+    .projects,
+    .contact {
+      padding: 5rem 0;
+    }
+    .aboutImg img {
+      border-radius: 50%;
+      width: 100%;
+      max-width: 200px;
     }
   </style>
 </head>
 
 <body>
   <!-- Header -->
-  <header id="header">
-    <div class="header container">
-      <div class="navBar">
-        <img src="bitmoji.png">
-        <div class="logo">
-          <h1><span>Mr</span>.<span>JB</span></h1>
-        </div>
-        <nav class="navList">
-          <ul>
-            <li><a href="#home" class="navLink"><span>Home</span></a></li>
-          </ul>
-        </nav>
-      </div>
+  <header class="header-bg py-3">
+    <div class="container d-flex align-items-center justify-content-between">
+      <img src="/images/bitmoji.png" alt="Logo" style="width: 50px; height: auto;">
+      <h1 class="text-light">Mr. <span class="text-primary">JB</span></h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="#home" class="nav-link navLink">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link navLink">About</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link navLink">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link navLink">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>

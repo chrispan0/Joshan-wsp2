@@ -1,68 +1,63 @@
 <%- include('header') %>
-  <!-- Home Section  -->
-  <section id="home">
-    <div class="home container">
-      <div>
-        <h1>Welcome to my Portfolio <span></span></h1>
-      </div>
+   <!-- Home Section -->
+   <section id="home" class="home text-center">
+    <div class="container">
+      <h1>Welcome to my Portfolio <span class="text-primary">J.B</span></h1>
+      <p class="lead">Exploring my journey in Networking and Information Technology</p>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="colLeft">
-        <div class="aboutImg">
-          <img src="bitmoji.png">
-        </div>
+  <section id="about" class="about bg-light">
+    <div class="container d-md-flex align-items-center">
+      <div class="aboutImg col-md-4 mb-4 mb-md-0 text-center">
+        <img src="/images/bitmoji.png" alt="Profile Image">
       </div>
-      <div class="colRight">
-        <h1 class="sectionTitle">About <span>me</span></h1>
-        <article>
-          <h2>Networking & Information Technology Student</h2>
-          <p>I am currently in my second year of the Networking and Information Technology program. I have a passion for technology. I enjoy exploring various aspects of IT, from network security to data management, and I'm excited to continue learning in this ever-evolving field.</p>
-          <p>Outside of my studies, I love to stay active and enjoy playing sports. Basketball and soccer are my favorite sports, and I find that they help me stay focused and motivated in my academic pursuits. Whether it's shooting hoops with friends or playing in a local soccer league, sports play an essential role in my life.</p>
-        </article>
-        <video controls poster="Get.png">
-          <source src="Movie on 2024-10-05 at 3.18 AM  3.mp4" type="video/mp4">
+      <div class="col-md-8">
+        <h2 class="sectionTitle">About <span class="text-primary">Me</span></h2>
+        <h3>Networking & Information Technology Student</h3>
+        <p>I am currently in my second year of the Networking and Information Technology program. I have a passion for technology and enjoy exploring various aspects of IT, from network security to data management.</p>
+        <p>Outside of my studies, I love playing basketball and soccer, which help me stay focused and motivated.</p>
+        <video controls poster="/images/Get.png" class="w-100 mt-3">
+          <source src="/images/Movie.mp4" type="video/mp4">
         </video>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <h1 class="sectionTitle">Recent <span>Projects</span></h1>
-      <div class="allProjects">
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="sectionTitle">Recent <span class="text-primary">Projects</span></h2>
+      <div class="row">
         <!-- Project Item 1 -->
-        <div class="projectItem">
-          <div class="projectInfo">
-            <h1>CryptoMine</h1>
-            <p>In this project, we developed a strategic routing protocol that enables a company named CryptoMine to communicate effectively with various locations, including Toronto, Los Angeles, Chicago, and New York. By utilizing different protocols such as OSPF and BGP, we ensured that CryptoMine is connected to each of these distinct sites.</p>
-          </div>
-          <div class="projectImg">
-            <img src="Cisco_logo..png">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="/images/Cisco_logo.png" class="card-img-top" alt="CryptoMine Project Image">
+            <div class="card-body">
+              <h5 class="card-title">CryptoMine</h5>
+              <p class="card-text">A strategic routing protocol connecting various locations like Toronto, Los Angeles, Chicago, and New York using OSPF and BGP.</p>
+            </div>
           </div>
         </div>
         <!-- Project Item 2 -->
-        <div class="projectItem">
-          <div class="projectInfo">
-            <h1>PythonEncryption</h1>
-            <p>My friends and I developed a Python program capable of deciphering various types of encryption codes. Through this project, we gained a solid understanding of how encryption functions and how to effectively break encrypted messages. Working on the program also deepened our knowledge of Python and its capabilities.</p>
-          </div>
-          <div class="projectImg">
-            <img src="python logo.png">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="/images/python_logo.png" class="card-img-top" alt="PythonEncryption Project Image">
+            <div class="card-body">
+              <h5 class="card-title">PythonEncryption</h5>
+              <p class="card-text">Developed a Python program capable of deciphering various encryption codes, enhancing our understanding of Python and encryption.</p>
+            </div>
           </div>
         </div>
         <!-- Project Item 3 -->
-        <div class="projectItem">
-          <div class="projectInfo">
-            <h1>Networking Design Project</h1>
-            <p>Local Area Network Design with Static Routing, IPv4 Addressing, VLSM, and Dynamic Routing Protocols. Key concepts include VLSM Subnetting, IP Addressing, Static Routing, and IPv4.</p>
-          </div>
-          <div class="projectImg">
-            <img src="Cisco_logo..png">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="/images/Cisco_logo.png" class="card-img-top" alt="Networking Design Project Image">
+            <div class="card-body">
+              <h5 class="card-title">Networking Design Project</h5>
+              <p class="card-text">Local Area Network Design with Static Routing, IPv4 Addressing, VLSM, and Dynamic Routing Protocols.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -70,26 +65,32 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <h1 class="sectionTitle">Contact <span>info</span></h1>
-      <div class="contactItems">
-        <form action="mailto: joshan.basgar@gmail.com" method="post" class="phpEmailForm">
-          <p>Name</p>
-          <input type="text" name="name" placeholder="Enter your Name here" required />
-          <p>Email</p>
-          <input type="email" name="email" placeholder="Enter your Email Here" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
-          <p>Phone Number</p>
-          <input type="tel" name="phone" placeholder="Enter your Cell No. here" required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number." />
-          <p>Subject</p>
-          <input type="text" name="subject" placeholder="Subject" required />
-          <p>Message</p>
-          <textarea style="height: 150px" name="message" placeholder="Enter your Message here" required></textarea>
-          <div class="button">
-            <button class="button" type="submit">Submit</button>
-          </div>
-        </form>
-      </div>
+  <section id="contact" class="contact bg-light">
+    <div class="container">
+      <h2 class="sectionTitle">Contact <span class="text-primary">Info</span></h2>
+      <form action="mailto:joshan.basgar@gmail.com" method="post" class="phpEmailForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]{10}">
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter subject" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-custom w-100">Submit</button>
+      </form>
     </div>
   </section>
   <%- include('footer') %>
