@@ -1,38 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/stylesheets/style.css" />
-  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM4KPp2DVI2Z4LM5ljKDQ2c5B6xEj8+zjFcdQYN" crossorigin="anonymous" />
-  <title>My Website (J.B)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="/javascripts/bootstrap.bundle.min.js"></script>
+  <title>My Portfolio - J.B</title>
   <style>
     html {
       scroll-behavior: smooth;
+    }
+    .sectionTitle {
+      text-align: center;
+      color: #495057;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .navLink {
+      color: #fff !important;
+    }
+    .header-bg {
+      background-color: #343a40;
+    }
+    .btn-custom {
+      background-color: #007bff;
+      color: #fff;
+    }
+    .btn-custom:hover {
+      background-color: #0056b3;
+    }
+    .footer-bg {
+      background-color: #343a40;
+      color: #ddd;
+    }
+    .projectImg img {
+      max-width: 100%;
+      height: auto;
+    }
+    .home,
+    .about,
+    .projects,
+    .contact {
+      padding: 5rem 0;
+    }
+    .aboutImg img {
+      border-radius: 50%;
+      width: 100%;
+      max-width: 200px;
     }
   </style>
 </head>
 
 <body>
   <!-- Header -->
-  <header id="header" class="bg-light shadow-sm">
-    <div class="container d-flex align-items-center justify-content-between py-3">
-      <img src="bitmoji.png" alt="Logo" class="img-fluid" style="max-width: 50px;">
-      <h1 class="fs-4 mb-0"><span>Mr</span>.<span>JB</span></h1>
-      <nav class="navbar navbar-expand-md">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-          </ul>
-        </div>
+  <header class="header-bg py-3">
+    <div class="container d-flex align-items-center justify-content-between">
+      <img src="/images/bitmoji.png" alt="Logo" style="width: 50px; height: auto;">
+      <h1 class="text-light">Mr. <span class="text-primary">JB</span></h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="#home" class="nav-link navLink">Home</a></li>
+        </ul>
       </nav>
     </div>
   </header>
